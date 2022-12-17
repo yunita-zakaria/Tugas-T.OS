@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int jd,data,no;
+    string nama[10], alamat[10], hobi[10];
+
+    cout << "----------------------------------------------------" << endl;
+    cout << "                 Daftar Alamat Mahasiswa   " << endl;
+    cout << "----------------------------------------------------" << endl;
+    cout << endl;
+    cout << "Jumlah Data  : ";cin>>jd;
+    cout << endl;
+    	
+    for(data=1;data<=jd;data++) {
+    	cout << "Nama    : "; cin >> nama[data];
+    	cout << "Alamat  : "; cin >> alamat[data];
+    	cout << "Hobby   : "; cin >> hobi[data];
+    	cout << endl;
+	}
+    cout << "                 DAFTAR MAHASISWA" << endl;
+    cout << "----------------------------------------------------" << endl;
+    cout << "No.  Nama        Alamat              Hobby" << endl;
+    cout << "----------------------------------------------------" << endl;
+    
+    for(data=1;data<=jd;data++){
+    	cout << data << "    " << nama[data] << "         " << alamat[data] << "              " << hobi[data] <<  endl;
+    }
+}
